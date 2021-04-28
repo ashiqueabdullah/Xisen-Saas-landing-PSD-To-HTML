@@ -4,18 +4,25 @@
 	--heading-color: #1c3354;
 	--btn-color: #00c867;
 	--paragraph-color: #7b8491;
+	--bg-color: #f5f8fa;
 	--heading-size: 50px;
 	--sub-heading-size: 45px;
 	--paragraph-size: 15px;
 	--link-size: 14px;
-	--btn-size: 13px;
+	--btn-size: 15px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 body{
 	font-family: 'Poppins', sans-serif;
 }
 /* Header CSS Start*/
-.header{}
+.header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
 .header img{
 	margin: 0px;
 	padding: 0px;
@@ -28,6 +35,7 @@ body{
 .header ul.menu_bar li{
 	display: inline-block;
 	list-style-type: none;
+	position: relative;
 }
 .header ul.menu_bar li a{
 	color: var(--link-color);
@@ -41,16 +49,128 @@ body{
 .header ul.menu_bar li a:hover{
 	color: var(--link-hover-color);
 }
-.header a.mybtn{
+.header ul.menu_bar li ul.submenu{
+	transition: .5s;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	border-top: 3px solid var(--btn-color);
+	border-radius: 5px;
+	box-shadow: 0px 10px 30px 0px rgba(0, 3, 143, 0.1);
+}
+.header ul.menu_bar li ul.submenutwo{
+	left: 100%;
+	top: -7%;
+}
+.header ul.menu_bar li:hover > ul.submenu{
+	visibility: visible;
+	opacity: 1;
+}
+.header ul.menu_bar li ul.submenu li{
+	display: block;
+	min-width: 220px;
+	background-color: white;
+	border-bottom: 1px solid var(--btn-color);
+}
+.header ul.menu_bar li ul.submenu li:last-child{
+	border-bottom: none;
+}
+.header ul.menu_bar li ul.submenu li a{
+	display: block;
+	padding: 10px 15px 10px 15px;
+}
+a.mybtn{
 	color: var(--btn-color);
 	font-size: var(--btn-size);
 	border: 1px solid var(--btn-color);
 	border-radius: 20px;
 	padding: 12px 45px;
 	font-weight: 600;
+	text-transform: uppercase;
 }
-.header a.mybtn:hover{
+a.mybtn:hover{
 	color: white;
 	background-color: var(--btn-color);
 }
 /* Header CSS End*/
+/* Slider Hrea Start */
+.slider{
+	min-height: 850px;
+	background-color: var(--bg-color);
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.slider .shape{
+
+}
+.slider .shape img.one{
+	width: 50px;
+	position: absolute;
+}
+.slider .shape img.two{
+	width: 40px;
+	position: absolute;
+	top: 75%;
+}
+.slider .shape img.three{
+	width: 50px;
+	position: absolute;
+	left: 85%;
+    top: 15%;
+}
+.slider .shape img.four{
+	width: 50px;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+}
+.slider .shape img.five{
+	width: 50px;
+    position: absolute;
+    left: 36%;
+    top: 47%;
+}
+.slider .shape img.six{
+	width: 50px;
+    position: absolute;
+    left: 90%;
+    top: 80%;
+}
+
+.slider h2{
+	color: var(--heading-color);
+	font-size: var(--heading-size);
+	font-weight: bold;
+	line-height: 60px;
+}
+.slider h2 span{
+	color: var(--btn-color);
+	display: block;
+}
+.slider p{
+	color: var(--paragraph-color);
+	font-size: var(--paragraph-size);
+	margin: 30px 0px;
+	line-height: 28px;
+} 
+.slider img{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+.slider a.mybtn{
+	text-transform: uppercase;
+	padding: 20px 40px;
+	border-radius: 50px;
+	font-size: 15px;
+	width: 200px;
+	color: white;
+	background-image: -moz-linear-gradient( 0deg, rgb(0,200,103) 1%, rgb(0,227,161) 100%);
+	background-image: -webkit-linear-gradient( 0deg, rgb(0,200,103) 1%, rgb(0,227,161) 100%);
+	background-image: -ms-linear-gradient( 0deg, rgb(0,200,103) 1%, rgb(0,227,161) 100%);
+}
+/* Slider Hrea End */
