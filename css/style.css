@@ -1,3 +1,56 @@
-
-
-
+:root{
+	--link-color: #2c303e;
+	--link-hover-color: #00c867 ;
+	--heading-color: #1c3354;
+	--btn-color: #00c867;
+	--paragraph-color: #7b8491;
+	--heading-size: 50px;
+	--sub-heading-size: 45px;
+	--paragraph-size: 15px;
+	--link-size: 14px;
+	--btn-size: 13px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+body{
+	font-family: 'Poppins', sans-serif;
+}
+/* Header CSS Start*/
+.header{}
+.header img{
+	margin: 0px;
+	padding: 0px;
+}
+.header ul.menu_bar{
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+.header ul.menu_bar li{
+	display: inline-block;
+	list-style-type: none;
+}
+.header ul.menu_bar li a{
+	color: var(--link-color);
+	font-size: var(--link-size);
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 40px 20px;
+	display: block;
+	transition: .6s;
+}
+.header ul.menu_bar li a:hover{
+	color: var(--link-hover-color);
+}
+.header a.mybtn{
+	color: var(--btn-color);
+	font-size: var(--btn-size);
+	border: 1px solid var(--btn-color);
+	border-radius: 20px;
+	padding: 12px 45px;
+	font-weight: 600;
+}
+.header a.mybtn:hover{
+	color: white;
+	background-color: var(--btn-color);
+}
+/* Header CSS End*/
