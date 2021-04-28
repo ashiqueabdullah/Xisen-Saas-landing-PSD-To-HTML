@@ -174,3 +174,60 @@ a.mybtn:hover{
 	background-image: -ms-linear-gradient( 0deg, rgb(0,200,103) 1%, rgb(0,227,161) 100%);
 }
 /* Slider Hrea End */
+/* Work Start*/
+.work{
+	padding: 100px 0px;
+	position: relative;
+}
+.work .heading{
+	text-align: center;
+	padding-bottom: 40px;
+}
+.work .heading h2{
+	color: var(--heading-color);
+	font-size: var(--heading-size);
+}
+.work .heading p{
+	color: var(--paragraph-color);
+	font-size: var(--paragraph-size);
+}
+.work .work-box{
+	 box-shadow: 0px 10px 30px 0px rgba(0, 3, 143, 0.1);
+	 padding: 20px;
+	 background-color: white;
+}
+.work .work-box img{}
+.work .work-box h3{
+	font-size: 22px;
+	color: var(--heading-color);
+}
+.work .work-box p{
+	font-size: var(--paragraph-size);
+	color: var(--paragraph-color);
+	padding-top: 15px;
+}
+.work .work-box a.read-more{
+	color: var(--heading-color);
+	font-size: var(--paragraph-size);
+	text-decoration: none;
+	transition: .6s;
+	position: relative;
+}
+.work .work-box a.read-more:hover{
+	color: var(--btn-color);
+}
+.work .work-box a.read-more:after{
+	background-color: #5BE4FD;
+    height: 10px;
+    width: 6px;
+    position: absolute;
+    content: "";
+    top: 30%;
+    left: 104%;
+}
+.work img.shape{
+	top: 20%;
+    left: 58%;
+	position: absolute;
+}
+/* Work End*/
