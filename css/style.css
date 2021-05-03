@@ -377,7 +377,7 @@ a.mybtn:hover{
   	color: var(--btn-color);
   }
  /* End Pricing */
-
+/* Start Clients saying */
  .clients{
  	padding: 100px 0px;
  }
@@ -402,5 +402,36 @@ a.mybtn:hover{
  	color: var(--paragraph-color);
  	font-size: 18px;
  }
+ /* End Clients saying */
 
-
+/* Start Experience  */
+.experience{
+	padding: 100px 0px;
+}
+.experience h2{
+	color: var(--heading-color);
+	font-size: var(--heading-size);
+	text-align: center;
+}
+.experience .input-sectioin{
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+.experience  input.my-input {
+    width: 55%;
+    padding: 20px 10px;
+}
+.experience .input-sectioin a{
+	text-decoration: none;
+    background-color: var(--btn-color);
+    color: white;
+    width: 15%;
+    text-align: center;
+    margin-left: 1%;
+    font-size: 20px;
+    display: block;
+    text-transform: uppercase;
+    padding: 15px 0px;
+}
+/* End Experience  */
