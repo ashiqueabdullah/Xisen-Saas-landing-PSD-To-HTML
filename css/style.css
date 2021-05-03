@@ -435,3 +435,48 @@ a.mybtn:hover{
     padding: 15px 0px;
 }
 /* End Experience  */
+/*Start Footer */
+.footer{
+	padding: 50px 0px;
+	background-color: var(--bg-color);
+}
+.footer img{
+	width: auto;
+}
+.footer p{
+	color: var(--paragraph-color);
+	font-size: var(--paragraph-size);
+	padding-top: 10px;
+}
+.footer .socila-icon{
+	margin: 0px;
+	padding: 0px;
+}
+.footer ul.socila-icon {}
+.footer ul.socila-icon li{
+	list-style-type: none;
+	display: inline-block;
+}
+.footer  ul.socila-icon li a{
+	text-decoration: none;
+	color: var(--paragraph-color);
+	font-size: var(--paragraph-size);
+	margin-right: 5px;
+}
+.footer h3{
+	color: var(--heading-color);
+	font-size: 25px;
+}
+.footer ul.box{
+	margin: 0px;
+	padding: 0px;
+}
+.footer ul.box li{
+	display: block;
+}
+.footer ul.box li a{
+	color: var(--paragraph-color);
+	font-size: var(--paragraph-size);
+	text-decoration: none;
+}
+/*End Footer */
