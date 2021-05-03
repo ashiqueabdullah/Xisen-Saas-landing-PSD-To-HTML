@@ -378,4 +378,29 @@ a.mybtn:hover{
   }
  /* End Pricing */
 
+ .clients{
+ 	padding: 100px 0px;
+ }
+ .clients img{
+ 	width: 100%;
+ }
+.clients h2{
+ 	color: var(--heading-color);
+ 	font-size: var(--heading-size);
+ }
+ .clients p{
+ 	color: var(--paragraph-color);
+ 	font-size: var(--paragraph-size);
+ 	padding-top: 10px;
+ 	padding: 15px 0px;
+ }
+ .clients h4{
+ 	color: var(--heading-color);
+ 	font-size:25px;
+ }
+ .clients h4 span{
+ 	color: var(--paragraph-color);
+ 	font-size: 18px;
+ }
+
 
